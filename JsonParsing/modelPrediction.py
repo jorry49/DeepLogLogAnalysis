@@ -67,8 +67,8 @@ def predict_with_model(model, data):
 
 def send_email(to_email, subject, content):
     smtp_server = 'smtp.qq.com'
-    sender = '3534976455@qq.com'  # 替换为你的发件人邮箱
-    password = 'uoubggykuhogdbgh'  # 替换为你的邮箱密码或应用密码
+    sender = '*****************'  # 替换为你的发件人邮箱
+    password = '*******************'  # 替换为你的邮箱密码或应用密码
 
     msg = MIMEText(content, 'plain', 'utf-8')
     msg['Subject'] = Header(subject, 'utf-8')
@@ -135,7 +135,7 @@ def detect_and_notify():
             print(f"异常日志索引: {index}, 类型: Cluster {row['cluster']}")
             print(f"日志内容: {row['template']}")
             # 发送邮件通知
-            to_email = '1481215919@qq.com'  # 替换为实际接收者邮箱
+            to_email = '**********************'  # 替换为实际接收者邮箱
             subject = '异常日志通知'
             content = f"检测到异常日志：\n{row['template']}"
             send_email(to_email, subject, content)
