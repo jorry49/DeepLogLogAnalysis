@@ -15,8 +15,8 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # 配置
 data_folder = "Resource/data/elasticsearch_data"
 timestamp_file = os.path.join(data_folder, "last_timestamp.txt")
-elasticsearch_url = "https://124.221.91.139:9200"
-elasticsearch_auth = HTTPBasicAuth("elastic", "Zs020609")
+elasticsearch_url = "**************************"
+elasticsearch_auth = HTTPBasicAuth("***************", "*****************")
 
 logging.basicConfig(filename='log_collector.log', level=logging.INFO)
 
