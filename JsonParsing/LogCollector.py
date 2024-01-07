@@ -6,10 +6,10 @@ from datetime import datetime, timedelta
 from requests.auth import HTTPBasicAuth
 
 # 配置
-data_folder = "Resource/data/elasticsearch_data"
+data_folder = "******************"
 timestamp_file = os.path.join(data_folder, "last_timestamp.txt")
-elasticsearch_url = "https://124.221.91.139:9200"
-elasticsearch_auth = HTTPBasicAuth("elastic", "Zs020609")
+elasticsearch_url = "https://******************"
+elasticsearch_auth = HTTPBasicAuth("*********", "**************")
 start_date = datetime(2023, 12, 3)  # 日志开始日期
 interval_seconds = 3600  # 设定时间间隔为1小时
 
